@@ -1,6 +1,6 @@
 auto: false
 server: true
 permalink: /:categories/:title
-baseurl: /stylehatch-jekyll
+baseurl: /
 pygments: true
 google_analytics_id: UA-18967664-1
