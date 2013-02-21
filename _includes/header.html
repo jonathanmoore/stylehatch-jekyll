@@ -3,21 +3,32 @@
     <div class="grid3 first">
       <h1>
         <a href="{{ site.url }}/">
-          <span>Jekyll</span>
-          <img src="{{ site.url }}/img/logo-2x.png" width="249px" height="115px" alt="">
+          Style Hatch
         </a>
       </h1>
     </div>
     <nav class="grid6">
       <ul>
-        <li {% if page.overview %}class="current"{% endif %}>
-          <a href="{{ site.url }}/">Overview</a>
+        <li {% if page.home %}class="current"{% endif %}>
+          <a href="{{ site.url }}/">Home</a>
         </li>
-        <li {% unless page.overview %}class="current"{% endunless %}>
-          <a href="{{ site.url }}/docs">Documentation</a>
+        <li {% if page.themes %}class="current"{% endif %}>
+          <a href="{{ site.url }}/themes">Themes</a>
         </li>
-        <li class="">
-          <a href="https://github.com/mojombo/jekyll">View on GitHub</a>
+        <li {% if page.mission %}class="current"{% endif %}>
+          <a href="{{ site.url }}/mission">Mission</a>
+        </li>
+        <li {% if page.forgood %}class="current"{% endif %}>
+          <a href="{{ site.url }}/for-good">For Good</a>
+        </li>
+        <li {% if page.about %}class="current"{% endif %}>
+          <a href="{{ site.url }}/about">About</a>
+        </li>
+        <li>
+          <a href="http://blog.stylehatch.co">Blog</a>
+        </li>
+        <li {% if page.support %}class="current"{% endif %}>
+          <a href="{{ site.url }}/support">Support</a>
         </li>
       </ul>
     </nav>
