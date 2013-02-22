@@ -1,5 +1,5 @@
 ---
-layout: support_faq
+layout: docs
 title: FAQ - Adding Twitter to your Tumblr theme
 permalink: /support/faq/adding-twitter-to-your-tumblr-theme/
 category: support_faq

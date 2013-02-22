@@ -1,5 +1,5 @@
 ---
-layout: support_faq
+layout: docs
 title: FAQ - Custom Theme Designs
 permalink: /support/faq/custom-theme-designs/
 category: support_faq

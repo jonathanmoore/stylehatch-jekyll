@@ -1,5 +1,5 @@
 ---
-layout: support_faq
+layout: docs
 title: FAQ - Buying a Tumblr theme
 permalink: /support/faq/buying-a-tumblr-theme/
 category: support_faq

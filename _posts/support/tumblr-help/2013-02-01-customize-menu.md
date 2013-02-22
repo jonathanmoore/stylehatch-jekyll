@@ -1,5 +1,5 @@
 ---
-layout: support_tumblr
+layout: docs
 title: Tumblr Help - Customize Menu
 permalink: /support/tumblr/customize-menu/
 category: support_tumblr

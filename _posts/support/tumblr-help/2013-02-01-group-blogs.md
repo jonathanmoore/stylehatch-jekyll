@@ -1,5 +1,5 @@
 ---
-layout: support_tumblr
+layout: docs
 title: Tumblr Help - Group Blogs
 permalink: /support/tumblr/group-blogs/
 category: support_tumblr
