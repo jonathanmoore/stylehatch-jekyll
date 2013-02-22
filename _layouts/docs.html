@@ -5,17 +5,35 @@ layout: default
   <section class="docs">
     <div class="content">
 
-      <div class="grid10 first">
+      <div class="main">
         <article>
           <h1>{{ page.title }}</h1>
           {{ content }}
-          {% include section_nav.html %}
         </article>
       </div>
 
-      {% include docs_contents.html %}
-
-      <div class="clear"></div>
+      <div class="related">
+        <h3>Related Posts</h3>
+        <p>A liquid loop to go through the 'support_themes' category that also matches the page 'subcat' to only show posts related to current theme:</p>
+        <ul>
+        {% if page.category == 'support_themes' %}
+          {% for post in site.categories.support_themes %}
+            {% if post.subcat == page.subcat %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% for post in site.categories.page.category %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      </div>
 
     </div>
   </section>
+
