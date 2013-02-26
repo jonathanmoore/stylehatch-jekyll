@@ -12,22 +12,22 @@
         <li {% if page.home %}class="current"{% endif %}>
           <a href="{{ site.baseurl }}">Home</a>
         </li>
-        <li {% if page.themes %}class="current"{% endif %}>
+        <li class="{% if page.title == "Style Hatch Themes" %}current{% endif %}">
           <a href="{{ site.baseurl }}themes">Themes</a>
         </li>
-        <li {% if page.mission %}class="current"{% endif %}>
+        <li class="{% if page.title == "Our Mission at Style Hatch" %}current{% endif %}">
           <a href="{{ site.baseurl }}mission">Mission</a>
         </li>
-        <li {% if page.forgood %}class="current"{% endif %}>
+        <li class="{% if page.title == "For Good" %}current{% endif %}">
           <a href="{{ site.baseurl }}for-good">For Good</a>
         </li>
-        <li {% if page.about %}class="current"{% endif %}>
+        <li class="{% if page.title == "About Style Hatch" %}current{% endif %}">
           <a href="{{ site.baseurl }}about">About</a>
         </li>
         <li>
           <a href="http://blog.stylehatch.co">Blog</a>
         </li>
-        <li {% if page.support %}class="current"{% endif %}>
+        <li class="{% if page.title == "Need some help?" %}current{% endif %}">
           <a href="{{ site.baseurl }}support">Support</a>
         </li>
       </ul>
