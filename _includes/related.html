@@ -5,7 +5,7 @@
     {% if page.category == 'support_themes' %}
       {% for post in site.categories.support_themes %}
         {% if post.subcat == page.subcat %}
-        <li>
+        <li class="{% if page.title == post.title %}current{% endif %}">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endif %}
@@ -13,7 +13,7 @@
     {% else %}
       {% for post in site.posts %}
         {% if post.category == page.category %}
-        <li>
+        <li class="{% if page.title == post.title %}current{% endif %}">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endif %}
