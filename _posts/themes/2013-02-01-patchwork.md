@@ -1,6 +1,6 @@
 ---
 layout: theme
-title: Style Hatch - Patchwork
+title: Patchwork
 theme_name: Patchwork
 price: $99
 permalink: /themes/patchwork/
